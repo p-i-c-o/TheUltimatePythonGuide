@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Variables</title><style>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Converting Variable Types</title><style>
 /* cspell:disable-file */
 /* webkit printing magic: print all background colors */
 html {
@@ -666,19 +666,28 @@ blockquote {
 	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
 }
 	
-</style></head><body><article id="7952729c-27bf-4397-863f-a80b74a3a3ed" class="page sans"><header><h1 class="page-title">Variables</h1></header><div class="page-body"><p id="ff2ce326-7661-4035-9c1d-54c9f3e2ac76" class="">Variables are a major part in Python, as they transport information around from one place to the other.</p><p id="ccc18e69-f702-46ad-bf1b-88dfaadc53f6" class="">Let&#x27;s call our variable &quot;Var1&quot;:</p><p id="45a5847c-b226-4515-8083-ed4ae5747459" class=""><strong>Var1</strong></p><p id="795d89bf-3018-4295-a850-0ba6888af9ce" class="">and let&#x27;s add our determinator:</p><p id="3350d45b-25e4-4ea0-a573-e9948254687c" class=""><strong>Var1 =</strong></p><p id="4b916fb2-8421-447e-9f32-7b26714205f7" class="">Now that we have a variable created we can add any data to it:</p><p id="b3e96955-8e9d-4e10-9c1c-3b390ffaa738" class="">Text         ex: <strong>Var1 = &quot;Hello World&quot;     </strong>( Any Text )    {‘ or “}</p><p id="0e5186da-40b9-4493-a105-3229dc86811a" class="">Number   ex: <strong>Var1 = 536</strong>                     ( Any number )</p><p id="e04da4b4-a0d9-4bfb-82e5-311a4bb0c502" class="">Float        ex: <strong>Var1 = 342.58</strong>               ( Any number )</p><p id="68a48817-c80e-4dad-8889-b4e1063d812a" class="">Boolean   ex: <strong>Var1 = True</strong>                    ( True or False )</p><p id="177044f2-38bd-4cb2-b84b-7fb543e2b7b2" class="">There are more types of variables, but these are good for the basics.</p><p id="03a26c20-01fa-4d09-a0c6-6efc42c9796a" class="">When we use variables, we don’t always use them alone. Connecting variables to make more variables is a crucial part too! Let’s learn…</p><p id="2c20a799-0ef8-4911-a03d-d5f9caaf454b" class="">Here are some examples </p><pre id="68a18aed-1c2f-4104-8d92-6463b2f8d856" class="code"><code>var1 = &#x27;Hello,&#x27;
-var2 = &#x27; World!&#x27;
+</style></head><body><article id="d3471b1b-91c4-41e8-b26f-b3256d9c2dce" class="page sans"><header><h1 class="page-title">Converting Variable Types</h1></header><div class="page-body"><p id="8e3bf396-59e7-4682-9864-bdcf483611cd" class="">Below is a super simple addition script, somewhat like a calculator!</p><pre id="88078b4e-a0f8-47bf-be06-ed456a71ba1a" class="code"><code>inp1 = input(&#x27;First number: &#x27;)
+inp2 = input(&#x27;Second number: &#x27;)
 
-print(var1 + var2)  # Method 1, using the &#x27;+&#x27;
-print(var1, var2)   # Method 2, using the &#x27;,&#x27;</code></pre><p id="c3f33971-59c1-40d6-9d07-c9cf2b51cad5" class="">Method 1 and 2 seem very similar, but they actually are very different!</p><p id="6de4a292-11b6-4871-83c8-fbf7292a04d6" class="">Method 1, simply explained, adds all the variables next to it, then prints it.</p><p id="cd7050cf-9426-4bab-b5dc-e0b1d220e786" class="">Whereas, Method 2, prints each item individually, enabling us to print two different types of variables at once! Like this:</p><pre id="86af3fd7-37c8-4bbe-8d62-42a9c36da77b" class="code"><code>var1 = &#x27;Hello,&#x27;
-var2 = 53
+FinalNumber = inp1 + inp2
 
-print(var1, var2)</code></pre><p id="4a84767a-c33b-42db-9abd-fd03dbdad03c" class="">
-</p><p id="fe76e3ee-c6d8-40e8-b652-34d7a814c59e" class="">When adding variables in-between text, we can easily clutter up our code by doing this:</p><pre id="bfdb884f-1e3d-49f8-8558-e95c65989967" class="code"><code>var1 = 173
-var2 = 896
+print(FinalNumber)</code></pre><p id="e68baf31-90ae-4bba-85cc-2f6144fc9814" class="">If we run this, we don’t get what we want back, </p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="f9079c8c-d11f-4c90-b9af-76d7422c8aa0"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/command-line_lightgray.svg"/></div><div style="width:100%">$python3 file.py
+First number: 1
+Second number: 3
+13</div></figure><p id="b83ec261-5f58-4378-95f6-0cb0b9fa4dda" class="">We <em>technically</em> get what we told the computer to do, but we wanted to add them together as numbers, not as text. In this case, we need to convert our text values to number values!</p><p id="fe55cbc3-4004-47c0-be3f-815367f40c05" class="">This is how we do it:</p><pre id="0dfd124b-fac0-432b-880c-b43584426346" class="code"><code>inp1 = input(&#x27;First number: &#x27;)
+inp2 = input(&#x27;Second number: &#x27;)
 
-print(&#x27;Our first number is &#x27;, var1, &#x27;. And our second number is &#x27;, var2)</code></pre><p id="c5d2952c-bcf8-43e5-b3ec-65413054f6c2" class="">
-</p><p id="80a07235-f3e0-44b5-9779-185f1df13575" class="">This does give us our desired outcome of:</p><blockquote id="d4dc5acd-a200-4672-b2f1-57bca45622cc" class="">Our first number is 173. And our second number is 896</blockquote><p id="669a8689-d1bf-45af-b878-7a573fbfcb96" class="">But another technique can be used to speed up and de-clutter our code!</p><pre id="908b9aa4-c4bb-4854-a05d-e3a7d8632351" class="code"><code>var1 = 173
-var2 = 896
+FinalNumber = int(inp1) + int(inp2)
 
-print(f&#x27;Our first number is {var1}. And our second number is {var2}&#x27;)</code></pre><p id="6ad9572b-b142-4a7a-bfa9-cd1aa8526cf0" class="">Adding an “f” before the first quotation mark will tell the computer that it will see variables surrounded with “{}” in the text, and to print them out as variables. Our first print command was 72 characters long, whereas our new one is only 69 characters long! (Nice)</p></div></article></body></html>
+print(FinalNumber)</code></pre><p id="b71e8cf5-50e5-4b67-ad4f-cf53cce1a39f" class="">When adding “int(&lt;var&gt;)” ( and replacing &lt;var&gt; with our variable, in this case “var1” ) it changes our previous value into an integer (int) AKA a number.</p><p id="a789b5df-24c6-4beb-be63-f02c864b874f" class="">This technique can be used in many different ways!</p><p id="e94591b0-1a94-4448-aa3a-ac1f1e131d8f" class="">More examples:</p><pre id="725576aa-5228-4426-87a3-9706a25c7fad" class="code"><code>#different type conversion
+a = int(4.3)
+b = float(12)
+c = int(&#x27;3&#x27;)
+d = str(9)
+ 
+#print result
+print(a)    # Returns: 4
+print(b)    # Returns: 12.0
+print(c)    # Returns: 3
+print(d)    # Returns: 9</code></pre><p id="f5f5569a-c9ea-41a1-8c77-4dce8e88fe2e" class="">
+</p></div></article></body></html>

@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>The Basics</title><style>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Variables</title><style>
 /* cspell:disable-file */
 /* webkit printing magic: print all background colors */
 html {
@@ -666,5 +666,19 @@ blockquote {
 	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
 }
 	
-</style></head><body><article id="f90e1521-060e-4f4d-a638-3c736ae2e894" class="page sans"><header><h1 class="page-title">The Basics</h1></header><div class="page-body"><hr id="d97f5234-58e8-4ed7-a7e6-9ef7326241e0"/><p id="7bc72539-01ac-4d5e-91f4-5ec7d8441f31" class="">Index:</p><figure id="7952729c-27bf-4397-863f-a80b74a3a3ed" class="link-to-page"><a href="The%20Basics%20f90e1521060e4f4da6383c736ae2e894/Variables%207952729c27bf4397863fa80b74a3a3ed.html">Variables</a></figure><p id="863eddd1-7390-4450-8239-ec82124a7bb6" class="">
-</p></div></article></body></html>
+</style></head><body><article id="7952729c-27bf-4397-863f-a80b74a3a3ed" class="page sans"><header><h1 class="page-title">Variables</h1></header><div class="page-body"><p id="ff2ce326-7661-4035-9c1d-54c9f3e2ac76" class="">Variables are a major part in Python, as they transport information around from one place to the other.</p><p id="ccc18e69-f702-46ad-bf1b-88dfaadc53f6" class="">Let&#x27;s call our variable &quot;Var1&quot;:</p><p id="45a5847c-b226-4515-8083-ed4ae5747459" class=""><strong>Var1</strong></p><p id="795d89bf-3018-4295-a850-0ba6888af9ce" class="">and let&#x27;s add our determinator:</p><p id="3350d45b-25e4-4ea0-a573-e9948254687c" class=""><strong>Var1 =</strong></p><p id="4b916fb2-8421-447e-9f32-7b26714205f7" class="">Now that we have a variable created we can add any data to it:</p><p id="b3e96955-8e9d-4e10-9c1c-3b390ffaa738" class="">Text         ex: <strong>Var1 = &quot;Hello World&quot;                    </strong>( Any Text )    {‘ or “}</p><p id="21117377-b80e-41a7-be8d-56bae352d1d9" class="">List          ex: <strong>Var1 = [’One’, ‘Two’, ‘Three’]     </strong>( Any Text )    {‘ or “}</p><p id="0e5186da-40b9-4493-a105-3229dc86811a" class="">Number   ex: <strong>Var1 = 536</strong>                                   ( Any number )</p><p id="e04da4b4-a0d9-4bfb-82e5-311a4bb0c502" class="">Float        ex: <strong>Var1 = 342.58</strong>                              ( Any number )</p><p id="68a48817-c80e-4dad-8889-b4e1063d812a" class="">Boolean   ex: <strong>Var1 = True</strong>                                   ( True or False )</p><p id="177044f2-38bd-4cb2-b84b-7fb543e2b7b2" class="">There are more types of variables, but these are good for the basics.</p><p id="03a26c20-01fa-4d09-a0c6-6efc42c9796a" class="">When we use variables, we don’t always use them alone. Connecting variables to make more variables is a crucial part too! Let’s learn…</p><p id="2c20a799-0ef8-4911-a03d-d5f9caaf454b" class="">Here are some examples </p><pre id="68a18aed-1c2f-4104-8d92-6463b2f8d856" class="code"><code>var1 = &#x27;Hello,&#x27;
+var2 = &#x27; World!&#x27;
+
+print(var1 + var2)  # Method 1, using the &#x27;+&#x27;
+print(var1, var2)   # Method 2, using the &#x27;,&#x27;</code></pre><p id="c3f33971-59c1-40d6-9d07-c9cf2b51cad5" class="">Method 1 and 2 seem very similar, but they actually are very different!</p><p id="6de4a292-11b6-4871-83c8-fbf7292a04d6" class="">Method 1, simply explained, adds all the variables next to it, then prints it.</p><p id="cd7050cf-9426-4bab-b5dc-e0b1d220e786" class="">Whereas, Method 2, prints each item individually, enabling us to print two different types of variables at once! Like this:</p><pre id="86af3fd7-37c8-4bbe-8d62-42a9c36da77b" class="code"><code>var1 = &#x27;Hello,&#x27;
+var2 = 53
+
+print(var1, var2)</code></pre><p id="4a84767a-c33b-42db-9abd-fd03dbdad03c" class="">
+</p><p id="fe76e3ee-c6d8-40e8-b652-34d7a814c59e" class="">When adding variables in-between text, we can easily clutter up our code by doing this:</p><pre id="bfdb884f-1e3d-49f8-8558-e95c65989967" class="code"><code>var1 = 173
+var2 = 896
+
+print(&#x27;Our first number is &#x27;, var1, &#x27;. And our second number is &#x27;, var2)</code></pre><p id="c5d2952c-bcf8-43e5-b3ec-65413054f6c2" class="">
+</p><p id="80a07235-f3e0-44b5-9779-185f1df13575" class="">This does give us our desired outcome of:</p><blockquote id="d4dc5acd-a200-4672-b2f1-57bca45622cc" class="">Our first number is 173. And our second number is 896</blockquote><p id="669a8689-d1bf-45af-b878-7a573fbfcb96" class="">But another technique can be used to speed up and de-clutter our code!</p><pre id="908b9aa4-c4bb-4854-a05d-e3a7d8632351" class="code"><code>var1 = 173
+var2 = 896
+
+print(f&#x27;Our first number is {var1}. And our second number is {var2}&#x27;)</code></pre><p id="6ad9572b-b142-4a7a-bfa9-cd1aa8526cf0" class="">Adding an “f” before the first quotation mark will tell the computer that it will see variables surrounded with “{}” in the text, and to print them out as variables. Our first print command was 72 characters long, whereas our new one is only 69 characters long! (Nice)</p></div></article></body></html>
